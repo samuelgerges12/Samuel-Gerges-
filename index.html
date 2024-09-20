@@ -5,139 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Samuel Gerges</title>
     <style>
+        /* Fonts and Colors */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f2f5;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
             color: #333;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        header h2 {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
+
+        /* Container and General Layout */
         .container {
-            width: 80%;
-            margin: 30px auto;
-            overflow: hidden;
-            padding: 20px;
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
             background-color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
         }
-        section {
-            margin: 20px 0;
+
+        /* Profile Section (Image and Basic Info) */
+        .profile {
+            text-align: center;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 12px;
         }
-        h3 {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile h2 {
+            font-size: 1.8em;
+            margin: 0;
             color: #007bff;
         }
+
+        .profile p {
+            color: #666;
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 8px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
         p, li {
             font-size: 1.1em;
-            line-height: 1.8;
+            line-height: 1.6;
+            color: #444;
         }
-        .skills-list, .courses-list {
-            list-style-type: none;
+
+        /* List Styling */
+        ul {
+            list-style: none;
             padding: 0;
         }
-        .skills-list li, .courses-list li {
-            padding: 10px;
-            background-color: #f7f7f7;
-            margin: 10px 0;
+
+        li {
+            background-color: #f0f2f5;
+            padding: 12px;
             border-radius: 8px;
-            transition: background-color 0.3s ease;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
         }
-        .skills-list li:hover, .courses-list li:hover {
+
+        li:hover {
             background-color: #007bff;
-            color: #fff;
+            color: white;
+            transform: scale(1.02);
         }
+
+        /* Contact Info and Links */
         .contact-info a {
             color: #007bff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
+
         .contact-info a:hover {
             text-decoration: underline;
         }
+
+        /* Footer */
         footer {
             text-align: center;
             margin-top: 30px;
-            padding: 10px 0;
+            padding: 20px;
             background-color: #007bff;
-            color: #fff;
-            border-radius: 0 0 10px 10px;
+            color: white;
+            border-radius: 0 0 12px 12px;
         }
+
         footer a {
-            color: #fff;
+            color: white;
+            font-weight: 600;
             text-decoration: none;
         }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Samuel Gerges</h1>
-    <h2>Mechanical Power Engineer</h2>
-</header>
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://i.ibb.co/kVZx34h/Whats-App-Image-2023-07-16-at-17-32-36.jpg" alt="Profile Picture">
+            <h2>Samuel Gerges</h2>
+            <p>Mechanical Power Engineer</p>
+        </div>
 
-<div class="container">
-    <section>
-        <h3>Contact Information</h3>
-        <p><strong>Phone:</strong> 01001348116</p>
-        <p><strong>Email:</strong> <a href="mailto:samuel.gerges.alsaid@gmail.com">samuel.gerges.alsaid@gmail.com</a></p>
-        <p><strong>Website:</strong> <a href="http://linktr.ee/samuel.gerges.alsaid">http://linktr.ee/samuel.gerges.alsaid</a></p>
-        <p><strong>Location:</strong> Cairo, Egypt</p>
-    </section>
+        <!-- Main Content -->
+        <div>
+            <!-- Contact Information -->
+            <section class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> 01001348116</p>
+                <p><strong>Email:</strong> <a href="mailto:samuel.gerges.alsaid@gmail.com">samuel.gerges.alsaid@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="http://linktr.ee/samuel.gerges.alsaid">http://linktr.ee/samuel.gerges.alsaid</a></p>
+                <p><strong>Location:</strong> Cairo, Egypt</p>
+            </section>
 
-    <section>
-        <h3>Education</h3>
-        <p>Bachelor of Mechanical Power Engineering - Minia University (2018-2023)</p>
-    </section>
+            <!-- Education -->
+            <section>
+                <h3>Education</h3>
+                <p>Bachelor of Mechanical Power Engineering - Minia University (2018-2023)</p>
+            </section>
 
-    <section>
-        <h3>Courses</h3>
-        <ul class="courses-list">
-            <li>Refrigeration and Air Conditioning</li>
-            <li>Hydronic System Design</li>
-            <li>Industrial Ventilation</li>
-            <li>Gas Dynamics</li>
-            <li>Turbomachines</li>
-        </ul>
-    </section>
+            <!-- Courses -->
+            <section>
+                <h3>Courses</h3>
+                <ul>
+                    <li>Refrigeration and Air Conditioning</li>
+                    <li>Hydronic System Design</li>
+                    <li>Industrial Ventilation</li>
+                    <li>Gas Dynamics</li>
+                    <li>Turbomachines</li>
+                </ul>
+            </section>
 
-    <section>
-        <h3>Skills</h3>
-        <ul class="skills-list">
-            <li>Revit</li>
-            <li>Duct Sizer</li>
-            <li>Hap</li>
-            <li>AutoCad</li>
-            <li>Pipe Sizer</li>
-            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
-        </ul>
-    </section>
+            <!-- Skills -->
+            <section>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Revit</li>
+                    <li>Duct Sizer</li>
+                    <li>Hap</li>
+                    <li>AutoCad</li>
+                    <li>Pipe Sizer</li>
+                    <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                </ul>
+            </section>
 
-    <section>
-        <h3>Projects</h3>
-        <p>Projects implemented during ASEC MEP Max Diploma: Residential Building, Commercial Tower, Garage, Central Kitchen, and Hospital.</p>
-    </section>
-</div>
+            <!-- Projects -->
+            <section>
+                <h3>Projects</h3>
+                <p>Projects implemented during ASEC MEP Max Diploma: Residential Building, Commercial Tower, Garage, Central Kitchen, and Hospital.</p>
+            </section>
+        </div>
+    </div>
 
-<footer>
-    <p>&copy; 2024 Samuel Gerges | <a href="http://linktr.ee/samuel.gerges.alsaid">Linktree</a></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Samuel Gerges | <a href="http://linktr.ee/samuel.gerges.alsaid">Linktree</a></p>
+    </footer>
 
 </body>
 </html>
